@@ -11,4 +11,5 @@
 * [Learning to Program in C part 2](https://www.youtube.com/watch?v=FwpP_MsZWnU)
 * [Understanding C Program Compilation](https://www.youtube.com/watch?v=VDslRumKvRA)
 * [Betty, Holberton C Coding Style](https://github.com/holbertonschool/Betty/wiki)
-
+* man gcc, man printf, man puts, man putchar
+* [more info](https://twitter.com/unix_byte/status/1024147947393495040?s=21)
