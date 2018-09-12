@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char a[62] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	write(2, a, sizeof(a));
+	write(2, "and that piece of art is ", sizeof("and that piece of art is "));
+	write(2, "useful\" - Dora Korpar, ", sizeof("useful\" - Dora Korpar, "));
+	write(2, "2015-10-19\n", sizeof("2015-10-19\n"));
 	return (1);
 }
