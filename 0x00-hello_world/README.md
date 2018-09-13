@@ -3,6 +3,7 @@
 ## Description
 
 This project in the Low Level Language Programming series is about:
+
 [Everything You Need to Know About C](https://docs.google.com/presentation/d/1ghto-TsXqgPRuEVmiCp7GvGttobdTLF4Yq8IRXwzvHY/edit#slide=id.p)
 * Why C programming is awesome
 * Who invented C (Ken Thompson Dennis Ritchie)
@@ -25,3 +26,12 @@ This project in the Low Level Language Programming series is about:
 ---
 File | Task
 ---|---
+0-preprocessor | Script to run C file through preprocessor and save into file c.
+1-compiler | Script to compile C file saved in $CFILE but not link it (filename.o).
+100-intel | Script to generate assembly code in Intel syntax (filename.s).
+101-quote.c | Printing a string to standard error without using puts or printf.
+2-assembler | Script to save assembly code of $CFILE c file (filename.s).
+3-name | Script to compile c file, $CFILE, and create an executable named cisfun.
+4-puts.c | C program that prints a specific string using puts.
+5-printf.c | C program to print a specific string and new line using printf.
+6-size.c | C program to print size of various types of data on the computer it is compiled and run on.

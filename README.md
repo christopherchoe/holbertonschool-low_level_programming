@@ -14,3 +14,15 @@
 * man gcc, man printf, man puts, man putchar
 * [more info](https://twitter.com/unix_byte/status/1024147947393495040?s=21)
 # holbertonschool-low_level_programming
+
+### 0x01. C - Variables, if, else, while
+* [Keywords and identifiers](http://publications.gbdirect.co.uk/c_book/chapter2/keywords_and_identifiers.html)
+* [Integers](http://publications.gbdirect.co.uk/c_book/chapter2/integral_types.html)
+* [https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm)
+* [If Statements in C](https://www.cprogramming.com/tutorial/c/lesson2.html)
+* [If Else Statements in C](https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm)
+* [Relational Operators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm)
+* [Logical Operators](https://fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/)
+* [While Loop in C](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
+
+### 0x02. 
