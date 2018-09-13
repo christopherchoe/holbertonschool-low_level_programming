@@ -13,7 +13,6 @@
 * [Betty, Holberton C Coding Style](https://github.com/holbertonschool/Betty/wiki)
 * man gcc, man printf, man puts, man putchar
 * [more info](https://twitter.com/unix_byte/status/1024147947393495040?s=21)
-# holbertonschool-low_level_programming
 
 ### 0x01. C - Variables, if, else, while
 * [Keywords and identifiers](http://publications.gbdirect.co.uk/c_book/chapter2/keywords_and_identifiers.html)
