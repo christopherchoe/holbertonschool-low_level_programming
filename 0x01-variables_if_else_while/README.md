@@ -34,4 +34,17 @@ This project in the Low Level Language Programming series is about:
 ---
 File | Task
 ---|---
-
+0-positive_or_negative.c | Prints whether a random number is negative, positive or zero.
+1-last_digit.c | Prints whether the last digit of a random number is above 5, below, or zero.
+10-print_comb2.c | Loop to print out double digit numbers from 00 to 99 with commas in between using putchar.
+100-print_comb3.c | Loop to print like 10-print_comb2.c but with no repeats in combinations.
+101-print_comb4.c | Loop like 100-print_comb3.c but with three digits.
+102-print_comb5.c | Print out pairs of numbers from 00 01 to 98 99 without repeating combinations.
+2-print_alphabet.c | Print out alphabet using putchar.
+3-print_alphabet.c | Print out alphabets in lower and upper case using putchar.
+4-print_alphabt.c | Print out alphabet in lower case without q and e.
+5-print_numbers.c | Print out digits from 0 to 9 using printf.
+6-print_numberz.c | Print out digits from 0 to 9 using putchar.
+7-print_tebahpla.c | Print out the alphabet backwards.
+8-print_base16.c | Print out digits and a to f using putchar.
+9-print_comb.c | Print out digits 0 to 9 with comma and spacing.
