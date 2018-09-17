@@ -24,4 +24,11 @@
 * [Logical Operators](https://fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/)
 * [While Loop in C](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
 
-### 0x02. 
+### 0x02. C - Functions, nested loops
+* [Nested while loops](https://www.youtube.com/watch?v=Z3iGeQ1gIss)
+* [C - Functions](http://www.tutorialspoint.com/cprogramming/c_functions.htm)
+* [Learning to Program in C pt. 6](https://www.youtube.com/watch?v=qMlnFwYdqIw)
+* [Purpose of a function prototype](https://www.youtube.com/watch?v=qMlnFwYdqIw)
+* [C-Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
+
+### 0x03. C -
