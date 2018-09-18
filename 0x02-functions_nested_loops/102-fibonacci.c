@@ -19,6 +19,8 @@ int main(void)
 		printf("%.0f", y);
 		if (z != 49)
 			printf(", ");
+		else
+			putchar('\n');
 	}
 	return (0);
 }
