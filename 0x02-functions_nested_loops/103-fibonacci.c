@@ -15,11 +15,14 @@ int main(void)
 		a = y;
 		y += x;
 		x = a;
-		z++;
 		if (z == 2)
 		{
 			b += y;
 			z = 0;
+		}
+		else
+		{
+			z++;
 		}
 	}
 	printf("%.0f\n", b);
