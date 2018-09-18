@@ -16,8 +16,11 @@ int main(void)
 		y += x;
 		x = a;
 		z++;
-		if (z = 2)
+		if (z == 2)
+		{
 			b += y;
+			z = 0;
+		}
 	}
 	printf("%.0f\n", b);
 	return (0);
