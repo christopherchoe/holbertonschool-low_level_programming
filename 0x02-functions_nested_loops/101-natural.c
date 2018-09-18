@@ -12,12 +12,12 @@ int main(void)
 
 	for (i = 0; i < 1024; i += 3)
 	{
-		if (i < 1024)
+		if (i <= 1024)
 			l += i;
 	}
 	for (k = 0; k < 1024; k += 5)
 	{
-		if (i < 1024)
+		if (i <= 1024)
 			l += k;
 	}
 	printf("%.0f\n", l);
