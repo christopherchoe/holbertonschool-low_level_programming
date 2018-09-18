@@ -17,7 +17,7 @@ int main(void)
 	}
 	for (k = 0; k < 1024; k += 5)
 	{
-		if (i <= 1024)
+		if (k <= 1024)
 			l += k;
 	}
 	printf("%.0f\n", l);
