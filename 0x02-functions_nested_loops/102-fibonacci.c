@@ -14,8 +14,8 @@ int main(void)
 	for (z = 0; z < 50; z++)
 	{
 		a = y;
-		y += x + y;
-		x = y;
+		y += x;
+		x = a;
 		printf("%.0f", y);
 		if (z != 49)
 			printf(", ");
