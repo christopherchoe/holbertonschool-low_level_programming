@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int x = 1, y = 2, a, b, x1, x2, y1, y2, z;
 
 	printf("%.0lu, %.0lu, ", x, y);
-	for (z = 0; z < 96; z++)
+	for (z = 0; z < 95; z++)
 	{
 		a = y;
 		if (z < 90)
@@ -43,7 +43,7 @@ int main(void)
 			y2 += x2;
 			x2 = b;
 		}
-		if (z != 95)
+		if (z != 94)
 			printf(", ");
 		else
 			putchar('\n');
