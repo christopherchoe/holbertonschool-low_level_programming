@@ -11,13 +11,13 @@ int main(void)
 	int z;
 
 	printf("%.0f, %.0f, ", x, y);
-	for (z = 0; z < 47; z++)
+	for (z = 0; z < 48; z++)
 	{
 		a = y;
 		y += x;
 		x = a;
 		printf("%.0f", y);
-		if (z != 46)
+		if (z != 47)
 			printf(", ");
 		else
 			putchar('\n');
