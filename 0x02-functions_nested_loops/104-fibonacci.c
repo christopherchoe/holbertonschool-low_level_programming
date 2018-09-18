@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int fib_long(long int, long int, long int, long int);
+
 /**
  * main - prints first 98 fibonacci numbers starting with 1.
  *
