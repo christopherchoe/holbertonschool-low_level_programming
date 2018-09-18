@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	double x = 1, y = 2, a;
+	long double x = 1, y = 2, a;
 	int z;
 
-	printf("%.0f, %.0f, ", x, y);
+	printf("%.0Lf, %.0Lf, ", x, y);
 	for (z = 0; z < 95; z++)
 	{
 		a = y;
 		y += x;
 		x = a;
-		printf("%.0f", y);
+		printf("%.0Lf", y);
 		if (z != 94)
 			printf(", ");
 		else
