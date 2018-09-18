@@ -5,7 +5,7 @@
 /**
  * print_to_98 - prints from a given digit to 98 in natural numbers.
  *
- * n: integer to start from.
+ * @n: integer to start from.
  * Return: void
  */
 void print_to_98(int n)

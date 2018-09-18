@@ -11,9 +11,15 @@ int main(void)
 	int i, k;
 
 	for (i = 0; i < 1024; i += 3)
-		l += i;
+	{
+		if (i < 1024)
+			l += i;
+	}
 	for (k = 0; k < 1024; k += 5)
-		l += k;
+	{
+		if (i < 1024)
+			l += k;
+	}
 	printf("%.0f\n", l);
 	return (0);
 }
