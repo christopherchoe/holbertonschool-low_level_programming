@@ -30,6 +30,7 @@ int main(void)
 				y1 = y - ((y / 10000) * 10000);
 				y2 = y / 10000;
 			}
+			a = fib_long(y1, y2, x1, x2);
 			if ((y1 + x1) >= 10000)
 			{
 				y2++;
@@ -37,7 +38,6 @@ int main(void)
 			}
 			else
 				b = y2;
-			a = fib_long(y1, y2, x1, x2);
 			x1 = y1;
 			y1 = a;
 			y2 += x2;
