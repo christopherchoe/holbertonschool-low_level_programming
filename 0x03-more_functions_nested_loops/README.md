@@ -24,7 +24,7 @@ This project in the Low Level Language Programming series is about:
 ---
 File | Task
 ---|---
-0-isupper.c | Function that checks for upper case on given int.
+0-isupper.c | Returns whether a int is an int is upper case or not.
 1-isdigit.c | Returns whether a int is a digit 0 to 9 or not
 10-print_triangle.c | Prints out a triangle sized based on a int argument.
 100-prime_factor.c | Prints out the largest prime number factor of a number.
@@ -36,5 +36,6 @@ File | Task
 6-print_line.c | Prints out a line based on a given int argument.
 7-print_diagonal.c | Prints out a diagonal line based on a int argument.
 8-print_square.c | Prints out a square based on a int argument.
-9-fizz_buzz.c | Prints numbers replacing multiples of 3 and 5 with fizz and buzz.
-holberton.h | Header file with functions used in projects.
+9-fizz_buzz.c | Prints numbers replacing multiples of 3 and 5 with fizz and buzz
+ holberton.h | Header file with functions used in projects.0-isupper.c | Function that checks for upper case on given int.
+
