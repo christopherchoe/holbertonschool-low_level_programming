@@ -31,4 +31,6 @@
 * [Purpose of a function prototype](https://www.youtube.com/watch?v=qMlnFwYdqIw)
 * [C-Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
 
-### 0x03. C -
+### 0x03. C - More functions, more nested loops
+* Same concepts as 0x02.
+
