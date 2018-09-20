@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-<<<<<<< HEAD
 void print_prev_digits(int n);
 
 /**
@@ -39,11 +38,4 @@ void print_prev_digits(int n)
 		_putchar((n / 10) + '0');
 	}
 }
-=======
-/**
- *
- *
- *
- */
 
->>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee

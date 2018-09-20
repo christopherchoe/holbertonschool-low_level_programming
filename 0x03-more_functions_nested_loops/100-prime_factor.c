@@ -1,5 +1,4 @@
 #include "holberton.h"
-<<<<<<< HEAD
 #include <stdio.h>
 
 /**
@@ -28,12 +27,4 @@ int main(void)
 	printf("%ld\n", num);
 	return (0);
 }
-=======
-
-/**
- *
- *
- *
- */
->>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee
 

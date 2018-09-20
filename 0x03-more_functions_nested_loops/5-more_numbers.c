@@ -1,7 +1,6 @@
 #include "holberton.h"
 
 /**
-<<<<<<< HEAD
  * more_numbers - prints from 0 to 14 and a new line, ten times
  *
  * Return: void
@@ -21,10 +20,4 @@ void more_numbers(void)
 		_putchar(10);
 	}
 }
-=======
- *
- *
- *
- */
 
->>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee
