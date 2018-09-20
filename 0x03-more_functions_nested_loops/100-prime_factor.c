@@ -4,19 +4,20 @@
 /**
  * main - find and print largest prime factor of a number
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	long int i = 2;
+	long int i;
 	long int num;
 
+	i = 2;
 	num = 612852475143;
 	while (i < (num / 2))
 	{
 		if ((num % i) == 0)
 		{
-			num /= i;
+			num = num / i;
 			i = 2;
 		}
 		else
