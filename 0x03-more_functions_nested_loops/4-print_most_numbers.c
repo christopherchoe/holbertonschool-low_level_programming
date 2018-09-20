@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
  * print_most_numbers - prints digits except two and four
  *
  * Return: void
@@ -16,3 +17,10 @@ void print_most_numbers(void)
 	}
 	_putchar(10);
 }
+=======
+ *
+ *
+ *
+ */
+
+>>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee

@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
  * _isdigit - determines if argument is a digit.
  *
  * @c: int to check if is a digit 0 to 9
@@ -13,4 +14,10 @@ int _isdigit(int c)
 	else
 		return (0);
 }
+=======
+ *
+ *
+ *
+ */
+>>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee
 

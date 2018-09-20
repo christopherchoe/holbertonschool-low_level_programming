@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
  * print_triangle - prints a triangle right aligned based on arugment
  *
  * @size: size of triangle height
@@ -26,4 +27,10 @@ void print_triangle(int size)
 		}
 	}
 }
+=======
+ *
+ *
+ *
+ */
+>>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee
 

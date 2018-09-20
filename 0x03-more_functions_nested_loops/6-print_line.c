@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
  * print_line - prints a straight line based on a int argument
  *
  * @n: number of times to print _
@@ -15,3 +16,10 @@ void print_line(int n)
 	}
 	_putchar('\n');
 }
+=======
+ *
+ *
+ *
+ */
+
+>>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee

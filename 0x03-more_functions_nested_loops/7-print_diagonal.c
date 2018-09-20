@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
  * print_diagonal - prints a diagonal line using \
  *
  * @n: the amount of \ we want to print
@@ -26,3 +27,10 @@ void print_diagonal(int n)
 		}
 	}
 }
+=======
+ *
+ *
+ *
+ */
+
+>>>>>>> b63cc36f23e495b62a34c2c9b6ae27440d454dee
