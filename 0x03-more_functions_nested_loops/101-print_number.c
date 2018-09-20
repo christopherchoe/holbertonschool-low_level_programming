@@ -13,11 +13,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
 	}
-	if (n > 9)
+	if (n > 9 || n < -9)
 		print_prev_digits(n);
-	_putchar((n % 10) + '0');
+	if (n < 0)
+		_putchar(((n % 10) * -1) + '0');
+	else
+		_putchar((n % 10) + '0');
 }
 
 /**
@@ -28,14 +30,20 @@ void print_number(int n)
  */
 void print_prev_digits(int n)
 {
-	if ((n / 10) > 9)
+	if (((n / 10) < -9) || ((n / 10) > 9))
 	{
 		print_prev_digits(n / 10);
-		_putchar(((n / 10) % 10) + '0');
+		if (n < 0)
+			_putchar((((n / 10) % 10) * -1) + '0');
+		else
+			_putchar(((n / 10) % 10) + '0');
 	}
 	else
 	{
-		_putchar((n / 10) + '0');
+		if (n < 0)
+			_putchar(((n / 10) * -1) + '0');
+		else
+			_putchar((n / 10) + '0');
 	}
 }
 
