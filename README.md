@@ -34,3 +34,8 @@
 ### 0x03. C - More functions, more nested loops
 * Same concepts as 0x02.
 
+### 0x04. C - Pointers, arrays and strings
+* [C - Arrays](https://intranet.hbtn.io/rltoken/JDzn5TfvFN41WKKvjOfvTg)
+* [C - Pointers](https://intranet.hbtn.io/rltoken/9CA1cUi3AxHOszdncsKC7g)
+* [C - Strings](https://intranet.hbtn.io/rltoken/VBdJIrssmpg5YLOfoGTVnA)
+* [pointers and arrays](https://intranet.hbtn.io/rltoken/kVltceqRAnz_WjS9zwYxqw)
