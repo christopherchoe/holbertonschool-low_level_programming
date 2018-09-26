@@ -32,7 +32,7 @@
 * [C-Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
 
 ### 0x03. C - More functions, more nested loops
-* Same concepts as 0x02.
+* Same concepts as 0x02
 
 ### 0x04. C - Pointers, arrays and strings
 * [C - Arrays](https://intranet.hbtn.io/rltoken/JDzn5TfvFN41WKKvjOfvTg)
