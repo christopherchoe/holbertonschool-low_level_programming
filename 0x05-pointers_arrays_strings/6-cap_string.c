@@ -18,12 +18,8 @@ char *cap_string(char *s)
 		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
 			*(s + i) -= n;
-			n = 0;
 		}
-		else if (*(s + i) >= 'A' && *(s + i) <= 'Z')
-		{
-			n = 0;
-		}
+		n = 0;
 		for (k = 0; k < 13; k++)
 		{
 			if (*(s + i) == array[k])
