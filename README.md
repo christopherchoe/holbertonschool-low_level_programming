@@ -39,3 +39,7 @@
 * [C - Pointers](https://intranet.hbtn.io/rltoken/9CA1cUi3AxHOszdncsKC7g)
 * [C - Strings](https://intranet.hbtn.io/rltoken/VBdJIrssmpg5YLOfoGTVnA)
 * [pointers and arrays](https://intranet.hbtn.io/rltoken/kVltceqRAnz_WjS9zwYxqw)
+
+### 0x05. C - More pointers, arrays, and strings
+* Same concepts as 0x04
+
