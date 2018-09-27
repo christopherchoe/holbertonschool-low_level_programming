@@ -9,7 +9,7 @@
  */
 char *cap_string(char *s)
 {
-	int i, k, flag = 1;
+	int i, k, flag;
 	int array[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 
 	for (i = 0; *(s + i) != '\0'; i++)
@@ -28,6 +28,7 @@ char *cap_string(char *s)
 			{
 				*(s + i + 1) -= 32;
 			}
+			flag = 1;
 		}
 		flag = 1;
 	}
