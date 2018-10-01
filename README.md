@@ -43,3 +43,10 @@
 ### 0x05. C - More pointers, arrays, and strings
 * Same concepts as 0x04
 
+### 0x06. C - Even more pointers, arrays, and strings
+* [C - Pointer to Pointer](https://intranet.hbtn.io/rltoken/97ic1ots5Y44UW4c5HBtRQ)
+* [C - Pointer to Pointer with example](https://intranet.hbtn.io/rltoken/97z8i9z1xAZuuT4rM0UEUg)
+* [Multi Dimensional Arrays in C](https://intranet.hbtn.io/rltoken/OINOASSTk6-D9PqX2oZZYw)
+* [Two dimensional arrays in C programming with example](https://intranet.hbtn.io/rltoken/i9uZ2jWeVSPZCJpgPheuEA)
+* [pointers and arrays again!](https://intranet.hbtn.io/rltoken/pvXJUy7BsqzZhdfEtR6zEw)
+
