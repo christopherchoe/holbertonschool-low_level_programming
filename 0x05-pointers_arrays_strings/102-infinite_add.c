@@ -45,8 +45,11 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			flag = addi(n2, r, size_r, i, n2_len, max);
 			if (flag == 0)
 				return (0);
-			else if (flag < 0)
+			if (flag < 0)
+			{
 				i++;
+				max++;
+			}
 		}
 		n1_len++;
 		n2_len++;
