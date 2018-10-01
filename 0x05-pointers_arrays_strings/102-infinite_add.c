@@ -54,6 +54,17 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	return (r);
 }
 
+/**
+ * addi - adds the second string if applicable
+ *
+ * @n2: second string to add
+ * @r: buffer to store addition
+ * @size_r: size of buffer
+ * @i: iteration of loop that function is inside
+ * @n2_len: length of n2 string
+ * @max: max length of strings
+ * Return: 0 if string size becomes too big, -1 if buffer size ++, 1 otherwise
+ */
 int addi(char *n2, char *r, int size_r, int i, int n2_len, int max)
 {
 	int n, temp;
