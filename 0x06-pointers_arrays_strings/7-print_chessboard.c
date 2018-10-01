@@ -4,7 +4,7 @@
 /**
  * print_chessboard - prints a chessboard
  *
- * @a[8]: pointer to 2D 8x8 array
+ * @a: pointer to 2D 8x8 array
  * Return: void, prints chessboard
  */
 void print_chessboard(char (*a)[8])
