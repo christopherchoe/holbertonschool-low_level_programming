@@ -26,7 +26,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		;
 	if (++n1_len > size_r || ++n2_len > size_r)
 		return (0);
-	printf("max is: %d\n" , n1_len);
 	if (n1_len > n2_len)
 		max = n1_len;
 	else
@@ -35,11 +34,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	n2_len -= max;
 	for (i = 0; i < max - 1; i++)
 	{
-		printf("r is: %c \n n1 is: %c \n", *(r+i), *(n1+n1_len));
 		if (n1_len >= 0)
 			*(r + i) = *(n1 + n1_len);
 		*(r + i + 1) = '\0';
-		printf("r is now after step 1: %s\n", r);
 		if (n2_len >= 0)
 		{
 			flag = addi(n2, r, size_r, i, n2_len, max);
@@ -77,7 +74,6 @@ int addi(char *n2, char *r, int size_r, int i, int n2_len, int max)
 			if (max + 1 > size_r)
 				return (0);
 			*(r + max) = '\0';
-			printf("testing: %c\n", *(r));
 			temp = *(r);
 			*(r) = '1';
 			for (n = 1; n <= i + 1; n++)
@@ -90,6 +86,5 @@ int addi(char *n2, char *r, int size_r, int i, int n2_len, int max)
 			return (-1);
 		}
 	}
-	printf("r is now after step 2: %s\n", r);
 	return (1);
 }
