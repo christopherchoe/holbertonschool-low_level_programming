@@ -32,7 +32,7 @@ int sqr(int a, int b)
 {
 	if (b == 0)
 		return (-1);
-	else if (a % b == 0 && a / b == b)
+	else if (b * b == a)
 		return (b);
 	else
 		return (sqr(a, b - 1));
