@@ -30,7 +30,7 @@ void print_buffer(char *b, int size)
 		{
 			for (count = i - 9; count < i; count++)
 			{
-				if (count > size)
+				if (count >= size)
 					printf(" ");
 				if (*(b + count) > 31 && count < size)
 					printf("%c", *(b + count));
