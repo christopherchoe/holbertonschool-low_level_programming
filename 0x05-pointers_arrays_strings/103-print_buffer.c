@@ -28,7 +28,7 @@ void print_buffer(char *b, int size)
 			printf(" ");
 		if (count == 10)
 		{
-			for (count = i - 9; count < i; count++)
+			for (count = i - 9; count <= i; count++)
 			{
 				if (count >= size)
 					printf(" ");
