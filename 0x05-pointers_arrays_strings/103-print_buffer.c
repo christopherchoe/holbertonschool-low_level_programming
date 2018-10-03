@@ -10,14 +10,16 @@
  */
 void print_buffer(char *b, int size)
 {
-	int i, count = 0;
+	int i, count = 0, limit = size;
 
+	if (size % 10 != 0)
+		limit = ((size / 10) + 1) * 10;
 	if (size <= 0)
 	{
 		printf("\n");
 		return;
 	}
-	for (i = 0; i < ((size / 10)) * 10; i++)
+	for (i = 0; i < limit; i++)
 	{
 		if (count++ % 10 == 0)
 		{
