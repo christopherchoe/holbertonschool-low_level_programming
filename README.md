@@ -57,4 +57,8 @@
 * [C Programming Tutorial 85 pt1](https://www.youtube.com/watch?v=XGxbXMP6k8k)
 * [C Programming Tutorial 86 pt2](https://www.youtube.com/watch?v=7XiIS6HobNs)
 
+### 0x08. C - Static Libraries
+* [What is a C Library, what is it good for?](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html#what_is_a_library)
+* [What is the difference between Dynamic and Static Libraries](https://www.youtube.com/watch?v=eW5he5uFBNM)
+* [C Static Libraries](https://intranet.hbtn.io/concepts/61)
 
