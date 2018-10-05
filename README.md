@@ -62,3 +62,9 @@
 * [What is the difference between Dynamic and Static Libraries](https://www.youtube.com/watch?v=eW5he5uFBNM)
 * [C Static Libraries](https://intranet.hbtn.io/concepts/61)
 
+### 0x09. C - argc, argv
+* [Arguments to main](http://publications.gbdirect.co.uk/c_book/chapter10/arguments_to_main.html)
+* [argc and argv](http://crasseux.com/books/ctutorial/argc-and-argv.html)
+* [What does int argc, char argv mean](https://www.youtube.com/watch?v=aP1ijjeZc24)
+* Compiling with unused Variables
+

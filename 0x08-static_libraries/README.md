@@ -11,4 +11,6 @@
  ---
  File|Task
  ---|---
+ create_static_lib.sh | script to create static library from .o files in working directory
+ libholberton.a | self made static library
  holberton.h | header file with prototypes
