@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 	product = argv[1]  argv[2];
 	printf("%d\n", product);
 	return (product);
-}	
+}
 
