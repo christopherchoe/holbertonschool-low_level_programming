@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
@@ -14,11 +15,12 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
-	a = 0;
-	product = argv[1]  argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	product = a * b;
 	printf("%d\n", product);
 	return (product);
 }
