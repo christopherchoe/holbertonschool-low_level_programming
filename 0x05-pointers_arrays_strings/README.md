@@ -15,7 +15,7 @@ This project in the Low Level Language Programming series is about:
 
 ---
 File|Task
-___|___
+---|---
 0-strcat.c | concatenates two strings
 1-strncat.c | concatenates two strings up to n chars
 100-print_number.c | prints an input number with putchar
