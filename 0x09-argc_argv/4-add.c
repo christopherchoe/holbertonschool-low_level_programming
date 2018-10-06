@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "holberton.h"
 
-int _atoi (char *s);
+int _atoi(char *s);
 
 /**
- * add - adds two strings, prints error if not digits in string
+ * main - adds two strings, prints error if not digits in string
  *
  * @argc: argument count
  * @argv: arguments
@@ -57,8 +57,6 @@ int _atoi(char *s)
 		{
 			flag = 1;
 		}
-		/* if (*(s + i) == '-')
-			neg *= -1;*/
 		else
 		{
 			return (0);
