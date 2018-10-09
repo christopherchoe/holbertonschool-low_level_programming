@@ -68,3 +68,8 @@
 * [What does int argc, char argv mean](https://www.youtube.com/watch?v=aP1ijjeZc24)
 * Compiling with unused Variables
 
+### 0x0A. C - malloc, free
+* [0x0a - malloc & free](https://docs.google.com/presentation/d/1awucWwPvD8BU783JVqzDXeSerU7eB504M6xRKKZndAI/edit#slide=id.p)
+* [Dynamic memory allocation in C -malloc calloc realloc free](https://www.youtube.com/watch?v=xDVC3wKjS64)
+* [Automatic and dynamic allocation, malloc and free](https://intranet.hbtn.io/concepts/62)
+
