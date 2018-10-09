@@ -22,6 +22,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 	product = a * b;
 	printf("%d\n", product);
-	return (product);
+	return (0);
 }
 
