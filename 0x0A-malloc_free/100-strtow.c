@@ -10,10 +10,8 @@
 char **strtow(char *str)
 {
 	char **a;
-	int i, k, n, word_count, word_len, current_word;
+	int i, k, n, word_count = 0, word_len, current_word = 0;
 
-	word_count = 0;
-	current_word = 0;
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (i = 0; *(str + i) != '\0'; i++)
@@ -45,11 +43,8 @@ char **strtow(char *str)
 				return (NULL);
 			}
 			for (n = 0; i < k; i++)
-			{
 				a[current_word][n++] = *(str + i);
-			}
-			a[current_word][n] = '\0';
-			current_word++;
+			a[current_word++][n] = '\0';
 		}
 	}
 	a[word_count] = NULL;
