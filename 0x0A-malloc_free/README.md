@@ -13,11 +13,11 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-create_array.c |
-1-strdup.c |
-100-strtow.c |
-2-str_concat.c |
-3-alloc_grid.c |
-4-free_grid.c |
-5-argstostr.c |
+0-create_array.c | creates an array of chars and initializes with a given char
+1-strdup.c | return a pointer to allocated space in memory with a copy of given string
+100-strtow.c | splits a string into words based on spaces and stores in a 2d array
+2-str_concat.c | concatenates two strings
+3-alloc_grid.c | returns a pointer to 2d array of integers
+4-free_grid.c | frees up 2d array from 3-alloc_grid.c
+5-argstostr.c | concatenates all arguments of program
 

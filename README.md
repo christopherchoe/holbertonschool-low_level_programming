@@ -73,3 +73,8 @@
 * [Dynamic memory allocation in C -malloc calloc realloc free](https://www.youtube.com/watch?v=xDVC3wKjS64)
 * [Automatic and dynamic allocation, malloc and free](https://intranet.hbtn.io/concepts/62)
 
+### 0x0B. C - More malloc, free
+* [Do I cast the result of malloc](https://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc)
+* [Automatic and dynamic allocation, malloc and free, again!](https://intranet.hbtn.io/concepts/62)
+* man 3 exit, calloc, realloc
+

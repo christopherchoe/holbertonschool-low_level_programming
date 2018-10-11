@@ -22,8 +22,9 @@ char **strtow(char *str)
 				word_count++;
 		}
 	}
-	a = malloc(sizeof(char *) * (word_count + 1));
-	if (a == NULL)
+	printf("%d word count \n", word_count);
+	a = malloc(sizeof(*a) * (word_count + 1));
+	if (a == NULL || word_count == 0)
 		return (NULL);
 	for (i = 0; *(str + i) != '\0'; i++)
 	{
