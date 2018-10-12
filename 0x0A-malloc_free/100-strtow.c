@@ -23,7 +23,7 @@ char **strtow(char *str)
 	a = malloc(sizeof(*a) * (word_count + 1));
 	if (a == NULL || word_count == 0)
 		return (NULL);
-	for (i = 0; *(str + i) != '\0'; i++)
+	for (i = 0; current_word < word_count; i++)
 	{
 		word_len = 0;
 		if (*(str + i) != ' ')
