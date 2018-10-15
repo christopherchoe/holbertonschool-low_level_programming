@@ -48,6 +48,6 @@ int main(int argc, char *argv[])
 	if (money != 0)
 		coins++;
 	printf("%d\n", coins);
-	return (coins);
+	return (0);
 }
 
