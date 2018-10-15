@@ -11,8 +11,10 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-malloc_checked.c |
-1-string_nconcat.c |
-2-calloc.c |
-3-array_range.c |
+0-malloc_checked.c | allocate memory with malloc
+1-string_nconcat.c | allocate memory and then concatenate two strings
+100-realloc.c | allocates new memory for existing pointer
+2-calloc.c | allocates memory for an array
+3-array_range.c | allocates memory for an array with values min to max
+
 
