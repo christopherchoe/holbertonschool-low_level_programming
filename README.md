@@ -78,3 +78,20 @@
 * [Automatic and dynamic allocation, malloc and free, again!](https://intranet.hbtn.io/concepts/62)
 * man 3 exit, calloc, realloc
 
+### 0x0C. C - Preprocessor
+* [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA)
+* [Object-like Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
+* [Macro Arguments](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments)
+* [Pre Processor Directives in C](https://www.youtube.com/watch?v=X6HiYbY3Uak)
+* [The C Preprocessor](https://www.cprogramming.com/tutorial/cpreprocessor.html)
+* [Standard Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
+* [Include Guard](https://en.wikipedia.org/wiki/Include_guard)
+
+### 0x0D. C - Structures, typedef
+* [0x0d. Strucutre](https://docs.google.com/presentation/d/1wy6-h7ox6qUUabC50A6PD5uLiKHasmiOYDk3DwZPfGs/edit#slide=id.g13db114aac_0_149)
+* [struct ,C programming language](https://en.wikipedia.org/wiki/Struct_(C_programming_language%29)
+* [Documentation: structures](https://github.com/holbertonschool/Betty/wiki/Documentation:-Data-structures)
+* [0x0d. typedef and structures](https://docs.google.com/presentation/d/1KNVX4ThB6RGEOFvwMMrHsJzC3EO3G3BaES68szWy9_E/edit#slide=id.g13db114aac_0_250)
+* [typedef](http://publications.gbdirect.co.uk/c_book/chapter8/typedef.html)
+
+
