@@ -12,9 +12,9 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-dog.h |
-1-init_dog.c |
-2-print_dog.c |
-dog.h |
-4-new_dog.c |
-5-free_dog.c |
+dog.h | header with prototypes and defintion of struct dog
+1-init_dog.c | initializes a struct dog
+2-print_dog.c | prints out the variables of a struct dog
+4-new_dog.c | creates a new dog with copies of the string variables
+5-free_dog.c | frees up the memory of a struct dog
+

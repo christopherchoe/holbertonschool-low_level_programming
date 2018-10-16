@@ -89,7 +89,7 @@
 
 ### 0x0D. C - Structures, typedef
 * [0x0d. Strucutre](https://docs.google.com/presentation/d/1wy6-h7ox6qUUabC50A6PD5uLiKHasmiOYDk3DwZPfGs/edit#slide=id.g13db114aac_0_149)
-* [struct ,C programming language](https://en.wikipedia.org/wiki/Struct_(C_programming_language%29)
+* [struct ,C programming language](https://en.wikipedia.org/wiki/Struct_(C_programming_language%29))
 * [Documentation: structures](https://github.com/holbertonschool/Betty/wiki/Documentation:-Data-structures)
 * [0x0d. typedef and structures](https://docs.google.com/presentation/d/1KNVX4ThB6RGEOFvwMMrHsJzC3EO3G3BaES68szWy9_E/edit#slide=id.g13db114aac_0_250)
 * [typedef](http://publications.gbdirect.co.uk/c_book/chapter8/typedef.html)

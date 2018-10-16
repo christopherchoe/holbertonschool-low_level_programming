@@ -12,6 +12,7 @@ File|Task
 ---|---
 0-puts_recursion.c | Program that uses recursion to print string
 1-print_rev_recursion.c | Program that prints the reverse of a string using recursion
+100-wildcmp.c | compares two strings where the second string can have an asterisk match any char.
 2-strlen_recursion.c | Program that returns the length of a string using recursion
 3-factorial.c | Program that returns a factorial of a number using recursion
 4-pow_recursion.c | Program that returns a number to the power of another number using recursion.
