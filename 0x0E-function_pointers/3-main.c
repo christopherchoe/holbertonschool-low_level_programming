@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
 	int a, b;
 	char c;
 
+	if (argv == NULL)
+		return (1);
 	if (argc != 4)
 	{
 		printf("Error\n");
