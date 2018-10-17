@@ -16,8 +16,6 @@ int main(int argc, char *argv[])
 	int a, b;
 	char c;
 
-	if (argv == NULL)
-		return (1);
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -28,7 +26,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	c = *argv[2];
 
-	if (*get_op_func(argv[2]) == NULL)
+	if (argv[2][0] != '\0' || *get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
