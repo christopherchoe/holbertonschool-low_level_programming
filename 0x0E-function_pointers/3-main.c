@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "3-calc.h"
 
+int (*get_op_func(char *s))(int, int);
+
 /**
  * main - will print result of a caluclation based on arguments
  *
