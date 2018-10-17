@@ -14,10 +14,10 @@ void print_name(char *name, void (*f)(char *))
 	{
 		name = malloc(sizeof(char *));
 		if (name == NULL)
-			return (NULL);
+			return;
 	}
 	if (f == NULL)
-		return (NULL);
+		return;
 	f(name);
 }
 
