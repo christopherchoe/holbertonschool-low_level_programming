@@ -94,4 +94,11 @@
 * [0x0d. typedef and structures](https://docs.google.com/presentation/d/1KNVX4ThB6RGEOFvwMMrHsJzC3EO3G3BaES68szWy9_E/edit#slide=id.g13db114aac_0_250)
 * [typedef](http://publications.gbdirect.co.uk/c_book/chapter8/typedef.html)
 
+### 0x0E. C - Function pointers
+* [Function Pointer in C](https://www.geeksforgeeks.org/function-pointer-in-c/)
+* [Pointers to functions](http://publications.gbdirect.co.uk/c_book/chapter5/function_pointers.html)
+* [Function Pointer in C/C++](https://www.youtube.com/watch?v=ynYtgGUNelE)
+* [why pointers to functions?](https://www.youtube.com/watch?v=sxTFSDAZM8s&feature=youtu.be)
+* [Everything you need to know about pointers in C](https://boredzo.org/pointers/)
+
 
