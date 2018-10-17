@@ -22,7 +22,10 @@ char **strtow(char *str)
 	}
 	a = malloc(sizeof(*a) * (word_count + 1));
 	if (a == NULL || word_count == 0)
+	{
+		free(a);
 		return (NULL);
+	}
 	for (i = 0; current_word < word_count; i++)
 	{
 		word_len = 0;
