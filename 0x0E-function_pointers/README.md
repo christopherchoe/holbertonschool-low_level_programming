@@ -13,12 +13,11 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-print_name.c |
-1-array_iterator.c |
-100-main_opcodes.c |
-2-int_index.c |
-3-main.c |
-3-op_functions.c |
-3-get_op_func.c |
-3-calc.h |
+0-print_name.c | uses function pointer to print a name
+1-array_iterator.c | uses function pointer on each element of an array
+2-int_index.c | looks for a match using a function on elements in array, returns index
+3-main.c | main of program that takes in a 3 argument simple arithmetic operation
+3-op_functions.c | the functions for arithmetic (+, -, mul, div, mod)
+3-get_op_func.c | function to determine which arithmetic function to use
+3-calc.h | header with prototypes and custom data struct op
 
