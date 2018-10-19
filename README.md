@@ -101,4 +101,10 @@
 * [why pointers to functions?](https://www.youtube.com/watch?v=sxTFSDAZM8s&feature=youtu.be)
 * [Everything you need to know about pointers in C](https://boredzo.org/pointers/)
 
+### 0x0F. C - Variadic functions
+* [stdarg.h](https://en.wikipedia.org/wiki/Stdarg.h)
+* [C - Variable Arguments](https://www.tutorialspoint.com/cprogramming/c_variable_arguments.htm)
+* [Functions with Variable Argument Lists in C using va_list](https://www.cprogramming.com/tutorial/c/lesson17.html)
+* [Variadic Functions](https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html)
+* [Const Keyword](https://www.youtube.com/watch?v=1W4oyuOdXv8)
 
