@@ -14,8 +14,8 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-sum_them_all.c |
-1-print_numbers.c |
-2-print_strings.c |
-3-print_all.c |
+0-sum_them_all.c | sums all variable arguments
+1-print_numbers.c | prints all integer arguments
+2-print_strings.c | prints all strings arguments
+3-print_all.c | prints all types based on a format string
 
