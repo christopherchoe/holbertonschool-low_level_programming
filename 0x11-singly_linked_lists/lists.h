@@ -5,19 +5,7 @@
 #include <stdlib.h>
 #include <strings.h>
 
-/**
-  * _strlen - finds string length
-  * @str: string
-  * Return: length of string
-  */
-int _strlen(char * str)
-{
-	int i;
-
-	for (i = 0; *str;)
-		i++;
-	return (i);
-}
+int _strlen(char * str);
 
 /**
  * struct list_s - singly linked list
