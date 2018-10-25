@@ -6,6 +6,20 @@
 #include <strings.h>
 
 /**
+  * _strlen - finds string length
+  * @str: string
+  * Return: length of string
+  */
+int _strlen(char * str)
+{
+	int i;
+
+	for (i = 0; *str;)
+		i++;
+	return (i);
+}
+
+/**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
