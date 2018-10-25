@@ -10,9 +10,8 @@
 size_t print_list(const list_t *h)
 {
 	int i = 0, ret = 1;
-	char nul[] = "[0] (nil)";
+	char nul[] = "(nil)";
 
-	printf("hi");
 	if (h->str)
 		i = _strlen(h->str);
 	printf("[%d] ", i);
@@ -31,7 +30,7 @@ size_t print_list(const list_t *h)
  * @str: string
  * Return: length of string
  */
-int _strlen(char * str)
+int _strlen(char *str)
 {
 	int i;
 
