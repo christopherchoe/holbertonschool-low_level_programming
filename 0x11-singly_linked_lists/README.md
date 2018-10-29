@@ -11,9 +11,10 @@ This projecgt in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-print_list.c |
-1-list_len.c |
-2-add_node.c |
-3-add_node_end.c |
-4-free_list.c |
+0-print_list.c | prints contents of list elements
+1-list_len.c | returns the length of the lists
+2-add_node.c | adds a node to beginning of list
+3-add_node_end.c | adds a node to the end of list
+4-free_list.c | frees the allocated memory of list
+100-first.c | prints a string before main is executed
 
