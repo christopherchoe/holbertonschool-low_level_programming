@@ -15,14 +15,9 @@ int get_bit(unsigned long int n, unsigned int index)
 		return (0);
 
 	lim = lim << index;
-	if (lim > n || index > dig)
+	if (index > dig)
 		return (-1);
-	while (index != 0)
-	{
-		index--;
-		n = n >> 1;
-	}
-	if (n == (n | 1))
+	if (lim & n)
 		return (1);
 	else
 		return (0);
