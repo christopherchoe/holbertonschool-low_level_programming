@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	while (copy > 0)
+	while (copy != 0)
 	{
 		i++;
 		copy = copy >> 1;
