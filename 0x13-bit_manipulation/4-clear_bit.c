@@ -18,8 +18,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	if (index > limit)
 		return (-1);
 	limit = 1 << index;
-	if (limit > *n)
-		return (-1);
 	if ((limit | *n) == *n)
 		*n = *n ^ limit;
 	return (1);
