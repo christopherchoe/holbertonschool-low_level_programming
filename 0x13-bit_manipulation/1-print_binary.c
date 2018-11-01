@@ -7,8 +7,10 @@
   */
 void print_binary(unsigned long int n)
 {
-	unsigned long int copy = n, i = 0, k;
+	unsigned long int copy, i, k;
 
+	copy = n;
+	i = 0;
 	if (n == 0)
 	{
 		_putchar('0');
@@ -19,7 +21,6 @@ void print_binary(unsigned long int n)
 		i++;
 		copy = copy >> 1;
 	}
-
 	while (i)
 	{
 		copy = n;
