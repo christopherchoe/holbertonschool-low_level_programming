@@ -19,28 +19,25 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fi = open(filename, O_RDONLY);
 	if (fi < 0)
 		return (0);
-	buf = malloc(sizeof(char) * letters + 1);
+	buf = malloc(sizeof(char) * letters);
 	if (!buf)
 	{
 		close(fi);
 		return (0);
 	}
 	re = read(fi, buf, letters);
+	close(fi);
 	if (re < 0)
 	{
-		close(fi);
 		free(buf);
 		return (0);
 	}
-	buf[re] = '\0';
 	wr = write(1, buf, re);
 	if (re != wr)
 	{
-		close(fi);
 		free(buf);
 		return (0);
 	}
-	close(fi);
 	free(buf);
 	return (wr);
 }
