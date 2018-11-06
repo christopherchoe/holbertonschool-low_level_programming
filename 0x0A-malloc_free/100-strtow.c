@@ -14,18 +14,18 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (i = 0; *(str + i) != '\0'; i++)
+	for (i = 0; *(str + i); i++)
 	{
 		if (*(str + i) != ' ')
-			if (*(str + i + 1) == ' ' || *(str + i + 1) == '\0')
-				word_count++;
+		{
+			word_count++;
+			while (*(str + i) != ' ' && *(str + i))
+				i++;
+		}
 	}
-	a = malloc(sizeof(*a) * (word_count + 1));
-	if (a == NULL || word_count == 0)
-	{
-		free(a);
+	a = malloc(sizeof(char *) * (word_count + 1));
+	if (a == NULL)
 		return (NULL);
-	}
 	for (i = 0; current_word < word_count; i++)
 	{
 		word_len = 0;
