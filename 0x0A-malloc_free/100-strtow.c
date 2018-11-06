@@ -28,14 +28,11 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; current_word < word_count; i++)
 	{
-		word_len = 0;
 		if (*(str + i) != ' ')
 		{
 			for (k = i; *(str + k) != ' '; k++)
-			{
 				if (*(str + k) != '\0')
 					word_len++;
-			}
 			a[current_word] = malloc(sizeof(char) * (word_len + 1));
 			if (a == NULL)
 			{
