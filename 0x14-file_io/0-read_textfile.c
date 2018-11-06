@@ -11,8 +11,7 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fi;
-	unsigned int re, wr;
+	int fi, re, wr;
 	char *buf;
 
 	if (!filename)
@@ -24,9 +23,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buf)
 		return (0);
 	re = read(fi, buf, letters);
+	if (re == -1)
+	{
+		free(buf);
+		return (0);
+	}
 	buf[re] = '\0';
 	wr = write(1, buf, re);
-	if (re != wr)
+	if (wr == -1 || re != wr)
 	{
 		free(buf);
 		return (0);
