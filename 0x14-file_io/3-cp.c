@@ -12,7 +12,7 @@ void error_close(int, char *);
   * copy_file - copies a file to another
   * @file_to: file to copy to
   * @file_from: file to copy from
-  * Return: 1 if success
+  * Return: 0
   */
 int copy_file(char *file_to, char *file_from)
 {
@@ -21,8 +21,8 @@ int copy_file(char *file_to, char *file_from)
 
 	buf = malloc(sizeof(char) * 1024);
 
-	if (!buf || !file_to)
-		error_file_to(file_to, buf);
+	if (!buf)
+		return (0);
 
 	from = open(file_from, O_RDONLY);
 	if (from == -1)
@@ -32,7 +32,7 @@ int copy_file(char *file_to, char *file_from)
 	if (to == -1)
 		error_file_to(file_to, buf);
 
-	while (re != 0)
+	while (re > 0)
 	{
 		re = read(from, buf, 1024);
 		if (re == -1)
@@ -48,7 +48,7 @@ int copy_file(char *file_to, char *file_from)
 	if (err == -1)
 		error_close(from, buf);
 	free(buf);
-	return (1);
+	return (0);
 }
 
 /**
