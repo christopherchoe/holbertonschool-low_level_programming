@@ -36,6 +36,8 @@ int copy_file(char *file_to, char *file_from)
 	do {
 		if (re == -1)
 			error_file_from(file_from, buf);
+		if (re == 0)
+			break;
 		wr = write(to, buf, re);
 		if (wr == -1)
 			error_file_to(file_to, buf);
