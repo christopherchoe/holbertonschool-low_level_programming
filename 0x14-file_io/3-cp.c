@@ -16,7 +16,7 @@ void error_close(int, char *);
   */
 int copy_file(char *file_to, char *file_from)
 {
-	int to, from, wr, err, re = 1;
+	int to, from, wr, err1, err2, re = 1;
 	char *buf;
 
 	buf = malloc(sizeof(char) * 1024);
@@ -41,11 +41,11 @@ int copy_file(char *file_to, char *file_from)
 		if (wr == -1)
 			error_file_to(file_to, buf);
 	}
-	err = close(to);
-	if (err == -1)
+	err1 = close(to);
+	if (err1 == -1)
 		error_close(to, buf);
-	err = close(from);
-	if (err == -1)
+	err2 = close(from);
+	if (err2 == -1)
 		error_close(from, buf);
 	free(buf);
 	return (0);
