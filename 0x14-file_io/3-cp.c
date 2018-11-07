@@ -90,7 +90,7 @@ void error_file_from(char *file_from, char *buf, int from)
   */
 void error_file_to(char *file_to, char *buf, int to)
 {
-	error_lcose(to, buf);
+	error_close(to, buf);
 	free(buf);
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 	exit(99);
