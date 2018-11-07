@@ -14,15 +14,14 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (i = 0; *(str + i); i++)
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
 		if (*(str + i) != ' ')
-		{
 			word_count++;
-			while (*(str + i) != ' ' && *(str + i))
-				i++;
-		}
+		while (*(str + i) != ' ' && *(str + i + 1) != '\0')
+			i++;
 	}
+	printf("word count %d\n", word_count);
 	a = malloc(sizeof(char *) * (word_count + 1));
 	if (a == NULL)
 		return (NULL);
@@ -31,8 +30,10 @@ char **strtow(char *str)
 		if (*(str + i) != ' ')
 		{
 			for (k = i; *(str + k) != ' '; k++)
+			{
 				if (*(str + k) != '\0')
 					word_len++;
+			}
 			a[current_word] = malloc(sizeof(char) * (word_len + 1));
 			if (a == NULL)
 			{
