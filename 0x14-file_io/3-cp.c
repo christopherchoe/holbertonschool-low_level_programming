@@ -80,12 +80,13 @@ void error_file_from(char *file_from, char *buf)
 /**
   * error_file_to - error procedure when file to cant be created
   * @file_to: name of file to
+  * @buf: buffer to free
   * Return: void
   */
 void error_file_to(char *file_to, char *buf)
 {
 	free(buf);
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_to);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 	exit(99);
 }
 
