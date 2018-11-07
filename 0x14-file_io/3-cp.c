@@ -58,9 +58,9 @@ void error_close(int fd, char *buf)
 	int err;
 
 	err = close(fd);
-	free(buf);
 	if (err == -1)
 	{
+		free(buf);
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
@@ -75,8 +75,8 @@ void error_close(int fd, char *buf)
   */
 void error_file_from(char *file_from, char *buf, int from)
 {
-	free(buf);
 	error_close(from, buf);
+	free(buf);
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 	exit(98);
 }
@@ -90,8 +90,8 @@ void error_file_from(char *file_from, char *buf, int from)
   */
 void error_file_to(char *file_to, char *buf, int to)
 {
+	error_lcose(to, buf);
 	free(buf);
-	error_close(to, buf);
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 	exit(99);
 }
