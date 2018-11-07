@@ -4,9 +4,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-void error_file_from(char *);
-void error_file_to(char *);
-void error_close(int);
+void error_file_from(char *, char *);
+void error_file_to(char *, char *);
+void error_close(int, char *);
 
 /**
   * copy_file - copies a file to another
@@ -22,52 +22,57 @@ int copy_file(char *file_to, char *file_from)
 	buf = malloc(sizeof(char) * 1024);
 
 	if (!buf || !file_to)
-		error_file_to(file_to);
+		error_file_to(file_to, buf);
 
 	from = open(file_from, O_RDONLY);
 	if (from == -1)
-		error_file_from(file_from);
+		error_file_from(file_from, buf);
 
 	to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (to == -1)
-		error_file_to(file_to);
+		error_file_to(file_to, buf);
 
 	while (re != 0)
 	{
 		re = read(from, buf, 1024);
 		if (re == -1)
-			error_file_from(file_from);
+			error_file_from(file_from, buf);
 		wr = write(to, buf, re);
 		if (wr == -1)
-			error_file_to(file_to);
+			error_file_to(file_to, buf);
 	}
 	err = close(to);
 	if (err == -1)
-		error_close(to);
+		error_close(to, buf);
 	err = close(from);
 	if (err == -1)
-		error_close(from);
+		error_close(from, buf);
+	free(buf);
 	return (1);
 }
 
 /**
   * error_close - error procedure when issue with closing
   * @fd: integer where file is opened
+  * @buf: buffer to free
   * Return: void
   */
-void error_close(int fd)
+void error_close(int fd, char *buf)
 {
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
+	free(buf);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+	exit(100);
 }
 
 /**
   * error_file_from - error procedure when issue with file from
   * @file_from: name of file from
+  * @buf: buffer to free
   * Return: void
   */
-void error_file_from(char *file_from)
+void error_file_from(char *file_from, char *buf)
 {
+	free(buf);
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 	exit(98);
 }
@@ -77,8 +82,9 @@ void error_file_from(char *file_from)
   * @file_to: name of file to
   * Return: void
   */
-void error_file_to(char *file_to)
+void error_file_to(char *file_to, char *buf)
 {
+	free(buf);
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_to);
 	exit(99);
 }
