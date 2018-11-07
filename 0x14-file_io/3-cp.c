@@ -16,7 +16,7 @@ void error_close(int, char *);
   */
 int copy_file(char *file_to, char *file_from)
 {
-	int to, from, wr, err1, err2, re = 1;
+	int to, from, wr, re = 1;
 	char *buf;
 
 	buf = malloc(sizeof(char) * 1024);
@@ -41,8 +41,8 @@ int copy_file(char *file_to, char *file_from)
 		if (wr == -1)
 			error_file_to(file_to, buf, to);
 	}
-	error_close(to);
-	error_close(from);
+	error_close(to, buf);
+	error_close(from, buf);
 	free(buf);
 	return (0);
 }
@@ -76,7 +76,7 @@ void error_close(int fd, char *buf)
 void error_file_from(char *file_from, char *buf, int from)
 {
 	free(buf);
-	error_close(from);
+	error_close(from, buf);
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 	exit(98);
 }
@@ -91,7 +91,7 @@ void error_file_from(char *file_from, char *buf, int from)
 void error_file_to(char *file_to, char *buf, int to)
 {
 	free(buf);
-	error_close(to);
+	error_close(to, buf);
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 	exit(99);
 }
