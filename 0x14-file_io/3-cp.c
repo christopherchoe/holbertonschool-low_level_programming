@@ -16,7 +16,7 @@ void error_close(int);
   */
 int copy_file(char *file_to, char *file_from)
 {
-	int to, from, wr, re = 1;
+	int to, from, wr, err, re = 1;
 	char *buf;
 
 	buf = malloc(sizeof(char) * 1024);
@@ -41,26 +41,24 @@ int copy_file(char *file_to, char *file_from)
 		if (wr == -1)
 			error_file_to(file_to);
 	}
-	error_close(to);
-	error_close(from);
+	err = close(to);
+	if (err == -1)
+		error_close(to);
+	err = close(from);
+	if (err == -1)
+		error_close(from);
 	return (1);
 }
 
 /**
   * error_close - error procedure when issue with closing
-  * @
+  * @fd: integer where file is opened
   * Return: void
   */
 void error_close(int fd)
 {
-	int err;
-
-	err = close(fd);
-	if (err == -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
-	}
 }
 
 /**
