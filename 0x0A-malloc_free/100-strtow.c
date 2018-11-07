@@ -21,7 +21,6 @@ char **strtow(char *str)
 		while (*(str + i) != ' ' && *(str + i + 1) != '\0')
 			i++;
 	}
-	printf("word count %d\n", word_count);
 	a = malloc(sizeof(char *) * (word_count + 1));
 	if (a == NULL)
 		return (NULL);
