@@ -23,16 +23,17 @@ char **strtow(char *str)
 		if (!*(str + i))
 			break;
 	}
+	if (word_count == 0)
+		return (NULL);
 	a = malloc(sizeof(char *) * (word_count + 1));
 	if (a == NULL)
 		return (NULL);
 	for (i = 0, k = i; current_word < word_count; i++, word_len = 0, k = i)
 	{
-		while (*(str + k) != ' ' && *(str + k))
-		{
-			k++;
+		if (*(str + i) == ' ')
+			continue;
+		while (*(str + k) != ' ' && *(str + k++))
 			word_len++;
-		}
 		a[current_word] = malloc(sizeof(char) * word_len + 1);
 		if (!a[current_word])
 		{
