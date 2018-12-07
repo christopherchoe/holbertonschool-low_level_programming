@@ -114,9 +114,13 @@
 ### 0x12. C - More singly linked lists
 * Same as 0x11
 
-### 0x13 C - Bit Manipulation
+### 0x13. C - Bit Manipulation
 * [Bit Manipulation](https://www.hackerearth.com/practice/notes/bit-manipulation/)
 
-### 0x14 C - File I/O
+### 0x14. C - File I/O
 * [File Descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 * [open() read() write()](https://www.youtube.com/watch?v=dP3N8g7h8gY)
+
+### 0x016. C - Doubly linked lists
+* [What is a doubly linked list](https://www.youtube.com/watch?v=k0pjD12bzP0)
+
