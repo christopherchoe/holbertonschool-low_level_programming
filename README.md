@@ -124,3 +124,7 @@
 ### 0x016. C - Doubly linked lists
 * [What is a doubly linked list](https://www.youtube.com/watch?v=k0pjD12bzP0)
 
+### 0x017. C - Dynamic libraries
+* [What is the difference between Dynamic and Static Libraries/Linking](https://www.youtube.com/watch?v=eW5he5uFBNM)
+* [Shared Libraries](http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
+
