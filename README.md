@@ -121,10 +121,18 @@
 * [File Descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 * [open() read() write()](https://www.youtube.com/watch?v=dP3N8g7h8gY)
 
-### 0x016. C - Doubly linked lists
+### 0x16. C - Doubly linked lists
 * [What is a doubly linked list](https://www.youtube.com/watch?v=k0pjD12bzP0)
 
-### 0x017. C - Dynamic libraries
+### 0x17. C - Dynamic libraries
 * [What is the difference between Dynamic and Static Libraries/Linking](https://www.youtube.com/watch?v=eW5he5uFBNM)
 * [Shared Libraries](http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
+
+### 0x18. C - LIFO FIFO Stack and Queue
+
+### 0x19-hash_tables
+* [HashTable Data Structure - Intro](https://www.youtube.com/watch?v=MfhjkfocRR0)
+* [Hash table](https://en.wikipedia.org/wiki/Hash_table)
+* [Hash function](https://en.wikipedia.org/wiki/Hash_function)
+* [Hash functions](http://www.cse.yorku.ca/~oz/hash.html)
 
