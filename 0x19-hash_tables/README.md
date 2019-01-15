@@ -18,5 +18,12 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
+0-hash_table_create.c | creates a hash table
+1-djb2.c | creates a hash based on a key
+2-key_index.c | creates an index based on a key using the djb2 algorithm
+3-hash_table_set.c | sets an element of the hash table
+4-hash_table_get.c | gets the value of a key in the hash table
+5-hash_table_print.c | prints the contents of the hash table
+6-hash_table_delete.c | deletes and frees the hash table
 hash_tables.h | header file for functions
 
