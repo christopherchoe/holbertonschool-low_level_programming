@@ -136,3 +136,8 @@
 * [Hash function](https://en.wikipedia.org/wiki/Hash_function)
 * [Hash functions](http://www.cse.yorku.ca/~oz/hash.html)
 
+### 0x1A-sorting_algorithms. C - Sorting algorithms & Big O
+* [Sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm)
+* [Big O notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
+* [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms)
+* [15 Sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
