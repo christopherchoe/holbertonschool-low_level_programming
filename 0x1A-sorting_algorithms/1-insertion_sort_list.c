@@ -2,6 +2,11 @@
 
 void swap_list(listint_t *, listint_t *, listint_t **);
 
+/**
+  * insertion_sort_list - sorts a list using insertion sort
+  *
+  * @list: double pointer to head of list
+  */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr = NULL;
@@ -24,6 +29,13 @@ void insertion_sort_list(listint_t **list)
 	}
 }
 
+/**
+  * swap_list - swaps two members of a list
+  *
+  * @curr: current node
+  * @prev: previous node
+  * @head: head of list
+  */
 void swap_list(listint_t *curr, listint_t *prev, listint_t **head)
 {
 	listint_t *temp1 = curr->next;
