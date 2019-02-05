@@ -12,7 +12,8 @@ void partition(int *array, int low, int high, size_t size);
 
 void quick_sort(int *array, size_t size)
 {
-	partition(array, 0, size - 1, size);
+	if (array)
+		partition(array, 0, size - 1, size);
 }
 
 /**
@@ -59,6 +60,7 @@ void partition(int *array, int low, int high, size_t size)
 	{
 		partition(array, low, lesser - 1, size);
 	}
+	/* Partition right subgroup */
 	if (lesser + 1 < high)
 	{
 		partition(array, lesser + 1, high, size);
