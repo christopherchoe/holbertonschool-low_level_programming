@@ -3,6 +3,12 @@
 void partition(int *, int, int, size_t);
 void swap(int *, int, int);
 
+/**
+  * quick_sort - quick sort algorithm
+  *
+  * @array: array to sort
+  * @size: size of array
+  */
 void quick_sort(int *array, size_t size)
 {
 	int i = 0;
@@ -13,6 +19,14 @@ void quick_sort(int *array, size_t size)
 	partition(array, i, size - 1, size);
 }
 
+/**
+  * partition - recursive function to sort sub arrays
+  *
+  * @array: array to sort
+  * @low: lowest index
+  * @high: highest index
+  * @size: size of array
+  */
 void partition(int *array, int low, int high, size_t size)
 {
 	int pivot = array[high];
@@ -52,6 +66,13 @@ void partition(int *array, int low, int high, size_t size)
 		partition(array, greater + 1, high, size);
 }
 
+/**
+  * swap - swaps the two indexes in array
+  *
+  * @array: array in which to swap
+  * @i: first index
+  * @k: second index
+  */
 void swap(int *array, int i, int k)
 {
 	int temp = array[i];
