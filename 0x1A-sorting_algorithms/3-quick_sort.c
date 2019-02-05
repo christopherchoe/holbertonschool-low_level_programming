@@ -50,7 +50,7 @@ void partition(int *array, int low, int high, size_t size)
 	}
 
 	/* move pivot to where it belongs */
-	if (pivot != lesser)
+	if (pivot != lesser && array[pivot] != array[lesser])
 	{
 		swap(array, pivot, lesser);
 		print_array(array, size);
