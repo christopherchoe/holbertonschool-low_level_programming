@@ -11,7 +11,7 @@ void insertion_sort(int *, long int, long int, size_t);
 void shell_sort(int *array, size_t size)
 {
 	long int n = 1;
-	long int i;
+	long int i, k, temp;
 
 	if (size < 2)
 		return;
@@ -21,35 +21,14 @@ void shell_sort(int *array, size_t size)
 
 	while (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (i = n; i < (long int) size; i++)
 		{
-			insertion_sort(array, i, n, size);
+			temp = array[i];
+			for (k = i; k >= n && array[k - n] > temp; k = k - n)
+				array[k] = array[k - n];
+			array[k] = temp;
 		}
 		print_array(array, size);
 		n = (n - 1) / 3;
-	}
-}
-
-/**
-  * insertion_sort - sorts a subarray using insertion sort
-  *
-  * @array: array containing sub array
-  * @start: starting point of sub array
-  * @n: gaps to have between sorting
-  * @size: size of array
-  */
-void insertion_sort(int *array, long int start, long int n, size_t size)
-{
-	long int i, k;
-	int temp;
-
-	for (i = start; i < (long int)size; i += n)
-	{
-		for (k = i; k > 0 && array[k] < array[k - n]; k = k - n)
-		{
-			temp = array[k];
-			array[k] = array[k - n];
-			array[k - n] = temp;
-		}
 	}
 }
