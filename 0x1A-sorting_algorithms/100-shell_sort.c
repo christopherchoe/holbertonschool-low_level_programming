@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void insertion_sort(int *, int, int, size_t);
+void insertion_sort(int *, long int, long int, size_t);
 
 /**
   * shell_sort - sorts using shell sort and knuths sequence
@@ -10,13 +10,13 @@ void insertion_sort(int *, int, int, size_t);
   */
 void shell_sort(int *array, size_t size)
 {
-	int n = 1;
-	int i;
+	long int n = 1;
+	long int i;
 
 	if (size < 2)
 		return;
 
-	while (n < (int)size)
+	while (n < (long int)size)
 		n = n * 3 + 1;
 	n = (n - 1) / 3;
 
@@ -39,11 +39,12 @@ void shell_sort(int *array, size_t size)
   * @n: gaps to have between sorting
   * @size: size of array
   */
-void insertion_sort(int *array, int start, int n, size_t size)
+void insertion_sort(int *array, long int start, long int n, size_t size)
 {
-	int i, k, temp;
+	long int i, k;
+	int temp;
 
-	for (i = start; i < (int)size; i += n)
+	for (i = start; i < (long int)size; i += n)
 	{
 		for (k = i; k > 0 && array[k] < array[k - n]; k = k - n)
 		{
