@@ -13,6 +13,9 @@ void shell_sort(int *array, size_t size)
 	int n = 1;
 	int i;
 
+	if (size < 2)
+		return;
+
 	while (n < (int)size)
 		n = n * 3 + 1;
 	n = (n - 1) / 3;
