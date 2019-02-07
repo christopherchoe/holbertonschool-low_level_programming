@@ -2,12 +2,20 @@
 
 void swap_list(listint_t *curr, listint_t *prev, listint_t **head);
 
+/**
+ * cocktail_sort_list - Sorts a Doubly linked list with cocktail sort
+ * @list: A Doubly linked list
+ */
+
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *cur = *list;
 	int flag_end = 0;
 
-	while(flag_end == 0)
+	if (!list || !(*list) || (*list)->next == NULL)
+		return;
+
+	while (flag_end == 0)
 	{
 		flag_end = 1;
 		while (cur->next)
