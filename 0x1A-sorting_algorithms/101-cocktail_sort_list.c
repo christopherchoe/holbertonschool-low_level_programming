@@ -16,8 +16,7 @@ void cocktail_sort_list(listint_t **list)
 	if (!list || !(*list) || (*list)->next == NULL)
 		return;
 
-	do
-	{
+	do {
 		while (cur->next)
 		{
 			if (cur->n > cur->next->n)
