@@ -12,21 +12,16 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *cur = *list;
 	listint_t *max = NULL;
 	listint_t *min = NULL;
-	int flag_end = 0;
 
 	if (!list || !(*list) || (*list)->next == NULL)
 		return;
 
 	do
 	{
-		flag_end = 1;
 		while (cur->next)
 		{
 			if (cur->n > cur->next->n)
-			{
 				swap_list(cur->next, cur, list);
-				flag_end = 0;
-			}
 			else
 				cur = cur->next;
 		}
@@ -34,10 +29,7 @@ void cocktail_sort_list(listint_t **list)
 		while (cur->prev != min)
 		{
 			if (cur->n < cur->prev->n)
-			{
 				swap_list(cur, cur->prev, list);
-				flag_end = 0;
-			}
 			else
 				cur = cur->prev;
 		}
