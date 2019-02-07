@@ -44,7 +44,7 @@ void insertion_sort(int *array, long int start, long int n, size_t size)
 	long int i, k;
 	int temp;
 
-	for (i = start; i < (long int)size; i += n)
+	for (i = start; i + n < (long int)size; i += n)
 	{
 		for (k = i; k > 0 && array[k] < array[k - n]; k = k - n)
 		{
