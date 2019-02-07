@@ -16,9 +16,9 @@ void cocktail_sort_list(listint_t **list)
 			{
 				swap_list(cur->next, cur, list);
 				flag_end = 0;
-				print_list(*list);
 			}
-			cur = cur->next;
+			else
+				cur = cur->next;
 		}
 		while (cur->prev)
 		{
@@ -26,9 +26,9 @@ void cocktail_sort_list(listint_t **list)
 			{
 				swap_list(cur, cur->prev, list);
 				flag_end = 0;
-				print_list(*list);
 			}
-			cur = cur->prev;
+			else
+				cur = cur->prev;
 		}
 	}
 }
