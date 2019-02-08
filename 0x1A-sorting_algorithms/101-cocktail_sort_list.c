@@ -9,13 +9,13 @@ void swap_list(listint_t *curr, listint_t *prev, listint_t **head);
 
 void cocktail_sort_list(listint_t **list)
 {
-	listint_t *cur = *list;
+	listint_t *cur;
 	listint_t *max = NULL;
 	listint_t *min = NULL;
 
 	if (!list || !(*list) || (*list)->next == NULL)
 		return;
-
+	cur = *list;
 	do
 	{
 		while (cur->next)
