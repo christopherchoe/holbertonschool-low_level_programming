@@ -6,7 +6,7 @@ CFLAGS=-Wall -Werror -Wextra -pedantic
 
 .PHONY: all
 
-all: $(OBJ) m.h
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: clean
