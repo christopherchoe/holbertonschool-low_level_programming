@@ -141,3 +141,9 @@
 * [Big O notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
 * [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms)
 * [15 Sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
+
+### 0x1B. C - Makefiles
+* [Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+* [GNU - Make](https://www.gnu.org/software/make/manual/html_node/Introduction.html)
+* [Makefile Cheatsheet](https://devhints.io/makefile)
+
