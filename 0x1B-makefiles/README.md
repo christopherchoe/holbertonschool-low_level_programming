@@ -7,6 +7,7 @@ This project in the Low Level Language Programming series is about:
 * [Simple Makefile Tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 * [GNU - Make](https://www.gnu.org/software/make/manual/html_node/Introduction.html)
 * [Makefile Cheatsheet](https://devhints.io/makefile)
+* [C Makefil cheatsheet](http://www.csheeet.com/en/latest/notes/c_make.html)
 * What are make, makefiles
 * When, why and how to use makefiles
 * What are rules and how to set and use them
