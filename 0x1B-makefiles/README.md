@@ -18,10 +18,10 @@ This project in the Low Level Language Programming series is about:
 ---
 File|Task
 ---|---
-0-Makefile | 
-1-Makefile | 
-100-Makefile | 
-2-Makefile | 
-3-Makefile | 
-4-Makefile | 
-5-island_perimeter.py | 
+0-Makefile | barebones makefile for holberton executable
+1-Makefile | makefile including some variables
+100-Makefile | makefile reducing redundancies and adding header check
+2-Makefile | makefile including more variables
+3-Makefile | makefile including remove functionality
+4-Makefile | makefile adding flags to compilation
+5-island_perimeter.py | program to determine perimeter of matrix based on predefined land/water ints
