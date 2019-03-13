@@ -3,25 +3,25 @@
 /**
  * binary_trees_ancestor - find lowest ancestor of two nodes
  *
- * @first: first node
- * @second: second node
+ * @f: f node
+ * @s: s node
  * Return: pointer to nearest common ancestor
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const bst_t *f, const bst_t *s)
 {
 	const binary_tree_t *tmp;
 	int level_1, level_2, min_level;
 
 	level_1 = level_2 = 0;
-	if (first == NULL || second == NULL)
+	if (f == NULL || s == NULL)
 		return (NULL);
-	tmp = first;
+	tmp = f;
 	while (tmp->parent != NULL)
 	{
 		tmp = tmp->parent;
 		level_1 += 1;
 	}
-	tmp = second;
+	tmp = s;
 	while (tmp->parent != NULL)
 	{
 		tmp = tmp->parent;
@@ -30,18 +30,20 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 	min_level = level_1 > level_2 ? level_2 : level_1;
 	while (level_1 != min_level)
 	{
-		first = first->parent;
+		f = f->parent;
 		level_1 -= 1;
 	}
 	while (level_2 != min_level)
 	{
-		second = second->parent;
+		s = s->parent;
 		level_2 -= 1;
 	}
-	while (second != first && first->parent != NULL)
+	while (s != f && f->parent != NULL)
 	{
-		first = first->parent;
-		second = second->parent;
+		f = f->parent;
+		s = s->parent;
 	}
-	return ((binary_tree_t *) first);
+	if (s == f)
+		return ((binary_tree_t *) f);
+	return (NULL);
 }
