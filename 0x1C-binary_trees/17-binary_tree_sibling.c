@@ -3,7 +3,7 @@
 /**
  * binary_tree_sibling - find sibling of a binary tree node
  *
- * @tree: root of tree to traverse
+ * @node: node to find sibling of
  * Return: pointer to node, NULL otherwise
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
@@ -23,6 +23,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		return (NULL);
 
 	if (parent->left == node)
-			return (parent->right);
+		return (parent->right);
 	return (parent->left);
 }

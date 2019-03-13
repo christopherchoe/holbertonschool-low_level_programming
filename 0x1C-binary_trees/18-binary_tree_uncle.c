@@ -5,7 +5,7 @@ binary_tree_t *b_tree_sibling(binary_tree_t *node);
 /**
  * binary_tree_uncle - find uncle of a binary tree node
  *
- * @tree: root of tree to traverse
+ * @node: node of tree to find uncle of
  * Return: pointer to node, NULL otherwise
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
