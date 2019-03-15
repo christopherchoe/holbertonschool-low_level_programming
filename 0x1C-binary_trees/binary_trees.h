@@ -24,6 +24,18 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+/**
+ * struct binary_list - Binary tree list
+ *
+ * @n: pointer to node
+ * @next: next node
+ */
+typedef struct binary_list
+{
+	const bst_t *n;
+	struct binary_list *next;
+} queue;
+
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
