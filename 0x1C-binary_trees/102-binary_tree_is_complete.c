@@ -68,7 +68,7 @@ int balance_tree(bst_t *tree)
 	if (tree->right)
 		right = balance_tree(tree->right);
 
-	return (right > left ? right : left);
+	return (1 + right > left ? right : left);
 }
 
 /**
