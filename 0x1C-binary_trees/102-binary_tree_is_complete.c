@@ -1,6 +1,7 @@
 #include "binary_trees.h"
 
 int make_levels(queue *, queue *);
+int balance_tree(bst_t *);
 /**
  * binary_tree_is_complete - traverse tree to find completeness
  *
@@ -10,10 +11,10 @@ int make_levels(queue *, queue *);
 int binary_tree_is_complete(const bst_t *tree)
 {
 	queue *first, *tmp;
-	int ret;
+	int ret, bf;
 
 	if (tree == NULL)
-		return (1);
+		return (0);
 
 	first = malloc(sizeof(queue));
 	if (first == NULL)
@@ -21,6 +22,12 @@ int binary_tree_is_complete(const bst_t *tree)
 
 	first->n = tree;
 
+	bf = balance_tree(tree->left) - balance_tree(tree->right);
+	if (bf > 1 || bf < -1)
+	{
+		free(first);
+		return (0);
+	}
 	ret = make_levels(first, first);
 
 	tmp = first;
@@ -41,6 +48,27 @@ int binary_tree_is_complete(const bst_t *tree)
 		free(tmp);
 	}
 	return (ret);
+}
+
+/**
+ * height_tree - checks height of tree
+ *
+ * @tree: tree to check
+ * Return: height of tree
+ */
+int balance_tree(bst_t *tree)
+{
+	int left = 0, right = 0;
+
+	if (tree == NULL)
+		return (0);
+
+	if (tree->left)
+		left = balance_tree(tree->left);
+	if (tree->right)
+		right = balance_tree(tree->right);
+
+	return (right > left ? right : left);
 }
 
 /**
