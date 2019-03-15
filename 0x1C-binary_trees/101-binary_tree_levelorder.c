@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 
-void make_levels(queue *, void (*func)(int));
+void make_levels(queue *, queue *);
 /**
  * binary_tree_levelorder - level order traversal of tree
  *
@@ -21,57 +21,53 @@ void binary_tree_levelorder(const bst_t *tree, void (*func)(int))
 
 	first->n = tree;
 
-	make_levels(first, func);
+	make_levels(first, first);
 
-	while (first != NULL)
+	while (first != NULL && first->n != NULL)
 	{
 		tmp = first;
 		func(first->n->n);
-		free(first);
-		first = tmp->next;
+		first = first->next;
+		free(tmp);
 	}
 }
 
 /**
  * make_levels - makes the level list
  *
- * @first: first queue member passed
- * @func: function to perform
+ * @node: first queue member passed
+ * @last: last queue member
  * Return: void
  */
-void make_levels(queue *first, void (*func)(int))
+void make_levels(queue *node, queue *last)
 {
 	queue *left, *right, *tmp;
 
-	if (first->n == NULL)
+	if (node == NULL || node->n == NULL || last->n == NULL)
 		return;
-	tmp = first;
+	tmp = last;
 	left = right = NULL;
-	if (first->n->left != NULL)
+	if (node->n->left != NULL)
 	{
 		left = malloc(sizeof(queue));
 		if (left == NULL)
 			return;
-		left->n = first->n->left;
+		left->n = node->n->left;
+		last->next = left;
 		tmp = left;
 	}
-	if (first->n->right != NULL)
+	if (node->n->right != NULL)
 	{
 		right = malloc(sizeof(queue));
 		if (right == NULL)
 			return;
-		right->n = first->n->right;
+		right->n = node->n->right;
 		right->next = NULL;
 		tmp = right;
 	}
 	if (left != NULL)
-	{
 		left->next = right;
-		first->next = left;
-	}
 	else
-	{
-		first->next = right;
-	}
-	make_levels(tmp, func);
+		last->next = right;
+	make_levels(node->next, tmp);
 }
