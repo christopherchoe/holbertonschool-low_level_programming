@@ -83,9 +83,9 @@ int make_levels(queue *node, queue *last)
 		last->next = right;
 	if (tmp == last)
 	{
-		if (last->next != NULL)
+		if (node->next != NULL)
 		{
-			if (last->next->n->left != NULL)
+			if (node->next->n->left != NULL)
 				return (0);
 		}
 	}
