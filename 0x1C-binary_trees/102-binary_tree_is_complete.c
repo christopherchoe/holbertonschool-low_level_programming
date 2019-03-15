@@ -5,7 +5,6 @@ int make_levels(queue *, queue *);
  * binary_tree_is_complete - traverse tree to find completeness
  *
  * @tree: tree to traverse
- * @func: function to perform on tree
  * Return: 1 if complete, 0 otherwise
  */
 int binary_tree_is_complete(const bst_t *tree)
@@ -14,7 +13,7 @@ int binary_tree_is_complete(const bst_t *tree)
 	int ret;
 
 	if (tree == NULL)
-		return (0);
+		return (1);
 
 	first = malloc(sizeof(queue));
 	if (first == NULL)
@@ -31,9 +30,11 @@ int binary_tree_is_complete(const bst_t *tree)
 	{
 		if (first->n->parent != NULL && first->n == first->n->parent->left)
 		{
-			if (first->next != NULL && first->next->n != NULL &&
-					first->next->n != first->n->parent->right)
-				ret = 0;
+			if (first->next != NULL && first->next->n != NULL)
+			{
+				if (first->next->n != first->n->parent->right)
+					ret = 0;
+			}
 		}
 		tmp = first;
 		first = first->next;
