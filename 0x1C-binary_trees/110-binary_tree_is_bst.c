@@ -4,7 +4,7 @@ int bst_min_max(const bst_t *, int, int);
 
 /**
  * binary_tree_is_bst - checks the bst status of a tree
- * 
+ *
  * @tree: tree to check
  * Return: 1 if valid bst, 0 otherwise
  */
@@ -30,7 +30,7 @@ int bst_min_max(const bst_t *tree, int min, int max)
 
 	if (tree == NULL)
 		return (1);
-	
+
 	if (tree->n > min && tree->n < max)
 	{
 		left = bst_min_max(tree->left, min, tree->n);
