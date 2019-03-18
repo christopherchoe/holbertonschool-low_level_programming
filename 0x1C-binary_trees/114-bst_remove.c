@@ -1,17 +1,43 @@
 #include "binary_trees.h"
 
 bst_t *remove_node(bst_t *root);
+bst_t *bst_remo(bst_t *root, int value);
 
 /**
  * bst_remove - remove a value in a bst
  *
  * @root: tree to search through
  * @value: value to find
- * Return: pointer to node or NULL on failure
+ * Return: pointerto node or NULL on failure
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
+	bst_t *to_free = NULL;
+
+	if (root == NULL)
+		return (NULL);
+
+	to_free = bst_remo(root, value);
+
+	if (root->right && root->right->parent == NULL)
+		root = root->right;
+	if (to_free != NULL)
+		free(to_free);
+	return (root);
+}
+
+/**
+ * bst_remo - helper function for removing
+ *
+ * @root: tree to search through
+ * @value: value to find
+ * Return: pointer to node to delete
+ */
+bst_t *bst_remo(bst_t *root, int value)
+{
 	bst_t *to_remove;
+
+	to_remove = NULL;
 
 	if (root == NULL)
 		return (NULL);
@@ -23,22 +49,14 @@ bst_t *bst_remove(bst_t *root, int value)
 	else if (value > root->n)
 	{
 		if (root->right != NULL)
-			to_remove = bst_remove(root->right, value);
-		else
-			return (NULL);
+			to_remove = bst_remo(root->right, value);
 	}
 	else if (value < root->n)
 	{
 		if (root->left != NULL)
-			to_remove = bst_remove(root->left, value);
-		else
-			return (NULL);
+			to_remove = bst_remo(root->left, value);
 	}
-	if (to_remove == NULL)
-		return (NULL);
-	if (to_remove->parent == NULL)
-		return (to_remove);
-	return (root);
+	return (to_remove);
 }
 
 /**
@@ -51,14 +69,21 @@ bst_t *remove_node(bst_t *root)
 {
 	bst_t *new_root;
 
+	new_root = NULL;
+
 	if (root->left && root->right)
 	{
 		new_root = root->right;
 		while (new_root->left != NULL)
 			new_root = new_root->left;
-		new_root->parent->left = NULL;
+		if (new_root->parent->left == new_root)
+			new_root->parent->left = NULL;
+		else
+			new_root->parent->right = NULL;
 		new_root->right = root->right;
+		root->right->parent = new_root;
 		new_root->left = root->left;
+		root->left->parent = new_root;
 	}
 	else if (root->left)
 	{
@@ -75,7 +100,10 @@ bst_t *remove_node(bst_t *root)
 		else
 			root->parent->right = new_root;
 	}
-	new_root->parent = root->parent;
-	free(root);
-	return (new_root);
+
+	if (new_root != NULL)
+		new_root->parent = root->parent;
+	root->right = new_root;
+
+	return (root);
 }
