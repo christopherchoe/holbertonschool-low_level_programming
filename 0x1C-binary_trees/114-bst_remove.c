@@ -15,11 +15,11 @@ bst_t *bst_remove(bst_t *root, int value)
 	bst_t *to_free = NULL;
 
 	if (root == NULL)
-		return (NULL);
+		return (root);
 
 	to_free = bst_remo(root, value);
 
-	if (root->right && root->right->parent == NULL)
+	if (root == to_free)
 		root = root->right;
 	if (to_free != NULL)
 		free(to_free);
@@ -77,21 +77,27 @@ bst_t *remove_node(bst_t *root)
 		while (new_root->left != NULL)
 			new_root = new_root->left;
 		if (new_root->parent->left == new_root)
+		{
 			new_root->parent->left = NULL;
+			new_root->right = root->right;
+			root->right->parent = new_root;
+		}
 		else
+		{
 			new_root->parent->right = NULL;
-		new_root->right = root->right;
-		root->right->parent = new_root;
+		}
 		new_root->left = root->left;
 		root->left->parent = new_root;
 	}
 	else if (root->left)
 	{
 		new_root = root->left;
+		root->left->parent = new_root;
 	}
 	else if (root->right)
 	{
 		new_root = root->right;
+		root->right->parent = new_root;
 	}
 	if (root->parent != NULL)
 	{
