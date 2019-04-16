@@ -147,3 +147,9 @@
 * [GNU - Make](https://www.gnu.org/software/make/manual/html_node/Introduction.html)
 * [Makefile Cheatsheet](https://devhints.io/makefile)
 
+### 0x1C - Binary Trees
+* Different sorting algorithms
+
+### 0x1D - Search Algorithms
+* [Search Algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
+* [Space complexity](https://www.geeksforgeeks.org/g-fact-86/)
