@@ -35,14 +35,14 @@ int advanced_binary(int *array, size_t size, int value)
 
 	if (array[mid] > value)
 	{
-		while (mid < size - 1 && array[mid + 1] == array[mid])
+		if (mid < size - 1 && array[mid + 1] == array[mid])
 			mid++;
 		return (advanced_binary(array, mid, value));
 	}
 	else
 	{
 		mid++;
-		while (mid > 0 && array[mid - 1] == array[mid])
+		if (mid > 0 && array[mid - 1] == array[mid])
 			mid--;
 		ret = advanced_binary(array + mid, size - mid, value);
 		if (ret != -1)
